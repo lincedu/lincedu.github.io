@@ -6,13 +6,10 @@
     <title>LINCEDU - Tecnologías del Lenguaje y Representación del Conocimiento en Educación</title>
     <meta name="description" content="Grupo de Innovación Educativa de la UPM centrado en IA, Tecnologías del Lenguaje y Web Semántica.">
     
-    <!-- Tailwind CSS (Estilos modernos sin necesidad de archivos CSS extra) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Iconos Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -24,25 +21,21 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Navegación -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo / Nombre -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="flex items-center gap-2">
-                        <i data-lucide="brain-circuit" class="h-8 w-8 text-blue-700"></i>
+                        <img src="logo_lincedu.png" alt="Logotipo LINCEDU" class="h-8 w-8 rounded-full">
                         <span class="font-bold text-xl tracking-tight text-slate-900">LINCEDU</span>
                     </a>
                 </div>
-                <!-- Menú Desktop -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-slate-600 hover:text-blue-700 font-medium transition">Sobre Nosotros</a>
                     <a href="#objectives" class="text-slate-600 hover:text-blue-700 font-medium transition">Objetivos</a>
                     <a href="#team" class="text-slate-600 hover:text-blue-700 font-medium transition">Equipo</a>
                     <a href="#contact" class="text-slate-600 hover:text-blue-700 font-medium transition">Contacto</a>
                 </div>
-                <!-- Botón Menú Móvil -->
                 <div class="md:hidden">
                     <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-blue-700">
                         <i data-lucide="menu" class="h-6 w-6"></i>
@@ -50,7 +43,6 @@
                 </div>
             </div>
         </div>
-        <!-- Menú Móvil -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#about" class="block px-3 py-2 text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-md">Sobre Nosotros</a>
@@ -61,7 +53,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="relative gradient-bg text-white pt-32 pb-24 px-4 overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -85,7 +76,6 @@
         </div>
     </header>
 
-    <!-- Líneas de Actuación -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -97,7 +87,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Línea 1 -->
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                         <i data-lucide="monitor-play" class="text-blue-600 h-6 w-6"></i>
@@ -105,7 +94,6 @@
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Tecnologías en el Aula</h3>
                     <p class="text-slate-600">Incorporación de tecnologías avanzadas a la formación presencial para enriquecer la experiencia de aprendizaje.</p>
                 </div>
-                <!-- Línea 2 -->
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                         <i data-lucide="users" class="text-indigo-600 h-6 w-6"></i>
@@ -113,7 +101,6 @@
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Metodologías Activas</h3>
                     <p class="text-slate-600">Desarrollo de metodologías activas de aprendizaje y evaluación apoyadas por herramientas inteligentes.</p>
                 </div>
-                <!-- Línea 3 -->
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
                         <i data-lucide="flask-conical" class="text-teal-600 h-6 w-6"></i>
@@ -125,7 +112,6 @@
         </div>
     </section>
 
-    <!-- Objetivos Estratégicos -->
     <section id="objectives" class="py-20 bg-slate-50 border-t border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -134,7 +120,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Obj 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="shield-check" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -145,7 +130,6 @@
                     </div>
                 </div>
 
-                <!-- Obj 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="book-open-check" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -156,7 +140,6 @@
                     </div>
                 </div>
 
-                <!-- Obj 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="wrench" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -167,7 +150,6 @@
                     </div>
                 </div>
 
-                <!-- Obj 4 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="lock" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -178,7 +160,6 @@
                     </div>
                 </div>
 
-                <!-- Obj 5 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="sparkles" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -189,7 +170,6 @@
                     </div>
                 </div>
 
-                <!-- Obj 6 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition group">
                     <div class="flex items-start">
                         <i data-lucide="network" class="text-blue-500 h-6 w-6 mt-1 mr-4 group-hover:scale-110 transition"></i>
@@ -203,7 +183,6 @@
         </div>
     </section>
 
-    <!-- Equipo -->
     <section id="team" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -211,9 +190,7 @@
                 <p class="mt-4 text-slate-600">Profesores e investigadores de la UPM comprometidos con la innovación.</p>
             </div>
 
-            <!-- Miembros Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Miembro (Coordinador) -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition relative overflow-hidden">
                     <div class="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-sm">CB</div>
                     <div>
@@ -224,7 +201,6 @@
                         <p class="text-xs text-slate-500">E.T.S.I. Sistemas Informáticos</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">PC</div>
                     <div>
@@ -232,7 +208,6 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">DG</div>
                     <div>
@@ -240,7 +215,6 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">EM</div>
                     <div>
@@ -248,7 +222,6 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">MP</div>
                     <div>
@@ -256,7 +229,6 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">LV</div>
                     <div>
@@ -264,7 +236,6 @@
                         <p class="text-xs text-slate-500">E.T.S.I. Topografía</p>
                     </div>
                 </div>
-                <!-- Miembro -->
                 <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">VR</div>
                     <div>
@@ -272,7 +243,6 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
-                 <!-- Miembro -->
                  <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
                     <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">PM</div>
                     <div>
@@ -280,11 +250,20 @@
                         <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
                     </div>
                 </div>
+                <div class="bg-slate-50 rounded-lg p-4 flex items-center space-x-4 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold text-sm">SB</div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-sm">Socorro Bernardos</h4>
+                        <p class="text-xs text-slate-500">E.T.S. Ingenieros Informáticos</p>
+                    </div>
+                </div>
+
+            
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contact" class="bg-slate-900 text-slate-300 py-12">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -304,7 +283,6 @@
         </div>
     </footer>
 
-    <!-- Inicializar iconos -->
     <script>
         lucide.createIcons();
     </script>
